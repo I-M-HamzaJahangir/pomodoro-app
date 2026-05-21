@@ -1,15 +1,27 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; color-scheme: light; }
+html, body, #root { height: 100%; }
 
-* {
-  margin: 0;
-  padding: 0;
-}
+:root {
+  --c-brand-blue:       #0391F2;
+  --c-brand-blue-700:   #0071BC;
+  --c-brand-blue-300:   #29ABE2;
+  --c-deep-navy:        #000E56;
+  --c-forest-green:     #2d6a4f;
+  --c-forest-green-700: #245740;
 
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
+  --c-ink-900: #0B1020;
+  --c-ink-700: #2A3554;
+  --c-ink-500: #5B667F;
+  --c-ink-300: #A6AFC4;
+
+  --c-success: #1DB36A;
+
+  --font-sans:    "Manrope", system-ui, -apple-system, sans-serif;
+  --font-display: "Manrope", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, monospace;
+  --font-serif:   "Instrument Serif", serif;
+
+  --ease-out: cubic-bezier(0.16, 0.84, 0.32, 1);
 }
