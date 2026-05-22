@@ -11,6 +11,7 @@ import { ChevronUpIcon } from "./assets/icons/icons";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { useTimer } from "./hooks/useTimer";
 import { fmtTime } from "./utils/utils";
+import TimerFace from "./components/TimerFace";
 
 export default function App() {
   const [focusMin, setFocusMin] = useLocalStorage(
@@ -76,6 +77,7 @@ export default function App() {
         <div className="timer-wrap">
           <ProgressRing progress={progress} mode={mode} />
           <div className="timer">
+            <TimerFace mode={mode} />
             <div
               className="time-num"
               aria-label={`${fmtTime(secsDisplay)} remaining`}

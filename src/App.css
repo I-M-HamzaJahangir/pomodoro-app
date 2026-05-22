@@ -254,6 +254,22 @@ kbd {
   animation: fadeUp 700ms var(--ease-out) both;
 }
 
+.timer-face {
+  color: var(--c-forest-green);
+  transition: color 600ms var(--ease-out);
+  line-height: 0;
+}
+.mode-break .timer-face {
+  color: var(--c-brand-blue);
+}
+.timer-face svg {
+  transition: transform 160ms cubic-bezier(0.4, 0, 1, 1);
+  transform-origin: center;
+}
+.timer-face--blink svg {
+  transform: scaleY(0);
+}
+
 .time-num {
   font-family: var(--font-display);
   font-weight: 500;
