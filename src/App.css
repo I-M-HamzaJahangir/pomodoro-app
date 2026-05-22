@@ -135,7 +135,9 @@ kbd {
   border-radius: 999px;
   background: var(--c-forest-green);
   box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
-  transition: background 600ms var(--ease-out), box-shadow 600ms var(--ease-out);
+  transition:
+    background 600ms var(--ease-out),
+    box-shadow 600ms var(--ease-out);
 }
 .mode-break .brand-dot {
   background: var(--c-brand-blue);
@@ -256,7 +258,9 @@ kbd {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(74px, 18vw, 154px);
-  font-feature-settings: "tnum" 1, "ss01" 1;
+  font-feature-settings:
+    "tnum" 1,
+    "ss01" 1;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.045em;
   line-height: 0.95;
@@ -447,14 +451,21 @@ kbd {
   letter-spacing: -0.003em;
   color: var(--c-ink-700);
   cursor: pointer;
-  box-shadow: 0 1px 4px rgba(11, 16, 32, 0.10), 0 1px 0 rgba(255,255,255,0.8) inset;
-  transition: background 160ms var(--ease-out), color 160ms var(--ease-out),
-              box-shadow 160ms var(--ease-out), transform 160ms var(--ease-out);
+  box-shadow:
+    0 1px 4px rgba(11, 16, 32, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  transition:
+    background 160ms var(--ease-out),
+    color 160ms var(--ease-out),
+    box-shadow 160ms var(--ease-out),
+    transform 160ms var(--ease-out);
 }
 .history-trigger:hover {
   background: #fff;
   color: var(--c-ink-900);
-  box-shadow: 0 3px 8px rgba(11, 16, 32, 0.13), 0 1px 0 rgba(255,255,255,0.9) inset;
+  box-shadow:
+    0 3px 8px rgba(11, 16, 32, 0.13),
+    0 1px 0 rgba(255, 255, 255, 0.9) inset;
   transform: translateY(-1px);
 }
 .history-trigger:active {
@@ -492,7 +503,7 @@ kbd {
   border-bottom: none;
   border-radius: 20px 20px 0 0;
   padding: 20px 24px 32px;
-  box-shadow: 0 -8px 40px rgba(11, 16, 32, 0.10);
+  box-shadow: 0 -8px 40px rgba(11, 16, 32, 0.1);
   transition: transform 350ms var(--ease-out);
   z-index: 101;
 }
@@ -524,10 +535,12 @@ kbd {
   place-items: center;
   color: var(--c-ink-500);
   cursor: pointer;
-  transition: background 140ms var(--ease-out), color 140ms var(--ease-out);
+  transition:
+    background 140ms var(--ease-out),
+    color 140ms var(--ease-out);
 }
 .drawer-close:hover {
-  background: rgba(11, 16, 32, 0.10);
+  background: rgba(11, 16, 32, 0.1);
   color: var(--c-ink-900);
 }
 
@@ -607,12 +620,24 @@ kbd {
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes rowIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

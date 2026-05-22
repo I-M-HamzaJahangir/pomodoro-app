@@ -1,5 +1,9 @@
 # Pomodoro App
 
+## Deployed Url
+
+https://pomodoro-app-six-blond.vercel.app/
+
 ## Run Locally
 
 ```bash
